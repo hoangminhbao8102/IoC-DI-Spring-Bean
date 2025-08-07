@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh sách giảng viên</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Danh sách giảng viên</h1>
+    <ul>
+        <li th:each="lecturer : ${lecturers}">
+            <strong th:text="${lecturer.name}"></strong> -
+            <span th:text="${lecturer.department}"></span>
+        </li>
+    </ul>
+</body>
+</html>
